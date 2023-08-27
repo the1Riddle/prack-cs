@@ -20,8 +20,15 @@ namespace SoloLearn
             {
             Console.WriteLine("enter the amount you wish to withdraw");
             double n = Convert.ToDouble(Console.ReadLine());
+	    if (n > balance)
+	    {
+		    Console.WriteLine("withdrawal failure\nYou can\'t withdraw that amount");
+	    }
+	    else
+	    {
             balance -= n;
             Console.WriteLine("withdrawal success");
+	    }
             }
         }
         public double GetBalance() {
