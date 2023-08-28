@@ -22,13 +22,13 @@ namespace SoloLearn
             double n = Convert.ToDouble(Console.ReadLine());
 	    if (n > balance)
 	    {
-		    Console.WriteLine("withdrawal failure\nYou can\'t withdraw that amount");
+		    Console.WriteLine("Oops! You can\'t withdraw that amount");
 	    }
 	    else
 	    {
             balance -= n;
             Console.WriteLine("withdrawal success");
-	    }
+	    } 
             }
         }
         public double GetBalance() {
